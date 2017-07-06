@@ -21,7 +21,7 @@
 .mat-capa p { margin-bottom: -12px; text-indent: 25px; line-height: 140%; }
 .mat-capa l { line-height: 140%; }
 #pa-home tit { font: italic bold 50px Playfair Display; text-align: center; display: block;  line-height: 100%; }
-#pa-home subt { font: 600 11px open sans; text-transform: uppercase; letter-spacing: 1.5px; }
+#pa-home subt { font: 600 11px open sans; text-transform: uppercase; letter-spacing: 1.5px; line-height: 130%; }
 .mat-quote { font: 700 italic 25px playfair display; text-align: left; line-height: 100%; padding: 30px 0px; color: #e85d5d; }
 
 .sp-slideshow { position: relative; margin: 0px auto; width: 1200px; height: 600px; }
@@ -39,12 +39,12 @@
     .sp-selector-1, .button-label-1 {margin-left: -20px;}
     .sp-selector-2, .button-label-2 {margin-left: -10px;}
     .sp-selector-3, .button-label-3 {margin-left: 0px;}
-    .sp-selector-4, .button-label-4 {margin-left: 18px;}
-    .sp-selector-5, .button-label-5 {margin-left: 36px;}
-    .sp-selector-6, .button-label-6 {margin-left: 54px;}
-    .sp-selector-7, .button-label-7 {margin-left: 72px;}
-    .sp-selector-8, .button-label-8 {margin-left: 90px;}
-    .sp-selector-9, .button-label-9 {margin-left: 108px;}
+    .sp-selector-4, .button-label-4 {margin-left: 10px;}
+    .sp-selector-5, .button-label-5 {margin-left: 20px;}
+    .sp-selector-6, .button-label-6 {margin-left: 30px;}
+    .sp-selector-7, .button-label-7 {margin-left: 40px;}
+    .sp-selector-8, .button-label-8 {margin-left: 50px;}
+    .sp-selector-9, .button-label-9 {margin-left: 60px;}
     
     .sp-arrow {position: absolute;top: 50%;width: 28px;height: 37px;margin-top: -19px;display: none;cursor: pointer;z-index: 1000; background: center top transparent url(http://i.imgur.com/hEfN7rx.png) no-repeat;-webkit-transition: opacity linear 0.3s;-moz-transition: opacity linear 0.3s;-o-transition: opacity linear 0.3s;-ms-transition: opacity linear 0.3s;
     transition: opacity linear 0.3s;}
@@ -56,14 +56,17 @@
     .sp-selector-4:checked ~ .sp-arrow.sp-a5, 
     .sp-selector-5:checked ~ .sp-arrow.sp-a6,
     .sp-selector-6:checked ~ .sp-arrow.sp-a7,
-    .sp-selector-7:checked ~ .sp-arrow.sp-a8{right: 15px;display: block;background-position: top right;}
+    .sp-selector-7:checked ~ .sp-arrow.sp-a8,
+    .sp-selector-8:checked ~ .sp-arrow.sp-a9{right: 15px;display: block;background-position: top right;}
+    
     .sp-selector-2:checked ~ .sp-arrow.sp-a1,
     .sp-selector-3:checked ~ .sp-arrow.sp-a2,
     .sp-selector-4:checked ~ .sp-arrow.sp-a3,
     .sp-selector-5:checked ~ .sp-arrow.sp-a4,
     .sp-selector-6:checked ~ .sp-arrow.sp-a5, 
     .sp-selector-7:checked ~ .sp-arrow.sp-a6,
-    .sp-selector-8:checked ~ .sp-arrow.sp-a7{left: 15px;display: block;background-position: top left;}
+    .sp-selector-8:checked ~ .sp-arrow.sp-a7,
+    .sp-selector-9:checked ~ .sp-arrow.sp-a8{left: 15px;display: block;background-position: top left;}
     
     
     .sp-slideshow input:checked ~ .sp-content {-webkit-transition: background-position linear 0.6s, background-color linear 0.8s;-moz-transition: background-position linear 0.6s, background-color linear 0.8s;-o-transition: background-position linear 0.6s, background-color linear 0.8s;-ms-transition: background-position linear 0.6s, background-color linear 0.8s;transition: background-position linear 0.6s, background-color linear 0.8s;}
@@ -78,6 +81,7 @@
     input.sp-selector-6:checked ~ .sp-content {background-position: -500px 0;background-color: #7d7f72;} 
     input.sp-selector-7:checked ~ .sp-content {background-position: -500px 0;background-color: #7d7f72;} 
     input.sp-selector-8:checked ~ .sp-content {background-position: -500px 0;background-color: #7d7f72;} 
+    input.sp-selector-9:checked ~ .sp-content {background-position: -500px 0;background-color: #7d7f72;} 
     
     input.sp-selector-1:checked ~ .sp-content .sp-parallax-bg {background-position: 0 0;} 
     input.sp-selector-2:checked ~ .sp-content .sp-parallax-bg {background-position: 0 0;} 
@@ -87,8 +91,9 @@
     input.sp-selector-6:checked ~ .sp-content .sp-parallax-bg {background-position: 0 0;} 
     input.sp-selector-7:checked ~ .sp-content .sp-parallax-bg {background-position: 0 0;} 
     input.sp-selector-8:checked ~ .sp-content .sp-parallax-bg {background-position: 0 0;} 
+    input.sp-selector-9:checked ~ .sp-content .sp-parallax-bg {background-position: 0 0;} 
     
-    .sp-slider { position: relative; left: 0; width: 9600px;height: 100%;list-style: none; margin: 0;padding: 0;-webkit-transition: left ease-in 0.8s; -moz-transition: left ease-in 0.8s; -o-transition: left ease-in 0.8s; -ms-transition: left ease-in 0.8s;transition: left ease-in 0.8s; }
+    .sp-slider { position: relative; left: 0; width: 10800px;height: 100%;list-style: none; margin: 0;padding: 0;-webkit-transition: left ease-in 0.8s; -moz-transition: left ease-in 0.8s; -o-transition: left ease-in 0.8s; -ms-transition: left ease-in 0.8s;transition: left ease-in 0.8s; }
     
     .sp-slider > li {
     height:100%;
@@ -119,6 +124,7 @@
     input.sp-selector-6:checked ~ .sp-content .sp-slider {left: -6000px;}
     input.sp-selector-7:checked ~ .sp-content .sp-slider {left: -7200px;}
     input.sp-selector-8:checked ~ .sp-content .sp-slider {left: -8400px;}
+    input.sp-selector-9:checked ~ .sp-content .sp-slider {left: -9600px;}
     
     
     input.sp-selector-1:checked ~ .sp-content .sp-slider > li:first-child,
@@ -128,7 +134,8 @@
     input.sp-selector-5:checked ~ .sp-content .sp-slider > li:nth-child(5),
     input.sp-selector-6:checked ~ .sp-content .sp-slider > li:nth-child(6),
     input.sp-selector-7:checked ~ .sp-content .sp-slider > li:nth-child(7),
-    input.sp-selector-8:checked ~ .sp-content .sp-slider > li:nth-child(8){ opacity: 1; }
+    input.sp-selector-8:checked ~ .sp-content .sp-slider > li:nth-child(8),
+    input.sp-selector-9:checked ~ .sp-content .sp-slider > li:nth-child(9){ opacity: 1; }
     
 </style>
 <center>
@@ -139,18 +146,8 @@
       <div style="background: #f1e573; padding-top: 70px; padding-bottom: 50px;">
       <a href="https://paideias.github.io/home/"><t>PÁ IDEIAS</t></a>
             <div id="navbar"><a>comprar</a><a>edições</a><a>favoritos</a><a>contato</a></div>
-      <div id="carrossel">
-      <a style="margin-left: -80px;">❮</a>
-      
-        <img src="http://i.imgur.com/jLdwSI1.png" />
-        <img src="http://i.imgur.com/jLdwSI1.png" />
-        <img src="http://i.imgur.com/jLdwSI1.png" />
-        <img src="http://i.imgur.com/jLdwSI1.png" />
-        <img src="http://i.imgur.com/jLdwSI1.png" />
-        <img src="http://i.imgur.com/jLdwSI1.png" />
-        
-      <a style="margin-left: 25px;">❯</a>  
-      </div></div>
+              
+            </div>
 
   
 
@@ -196,7 +193,27 @@
            
            
             
+<div class="mat-capa" style="background: #fff;"> 
+            <div style="padding: 50px 0px 0px 0px; height: 150px; width: 1080px; color: black;">
+    <tit>O Design e a Cultura <br>Visual Urbana</tit></div>
+  
+  <div style="margin: 42px 20px 0px 160px; width: 240px; float: left;">
+  
+  <p>Segundo a Declaração Universal da UNESCO sobre a Diversidade Cultural (2002): a diversidade cultural contribui para uma existência intelectual, afetiva, 
+  moral e espiritual satisfatória constituindo um dos elementos essenciais de transformação da realidade urbana e social. O designer, enquanto profissional do 
+  projeto contribui para que esta diversidade cultural seja percebida e<p>
+</div>
 
+<div style="margin: 40px 20px 0px 0px; width: 240px; float: left;">
+<p style="text-indent: 0px;">percecionada pelo maior número de pessoas, por forma a preservá-la a um nível intangível.</p>
+  <p>Cada vez mais, a palavra design é utilizada no nosso quotidiano, sendo muitas vezes percebida e empregue como sinónimo de representação visual.</p>
+<p>A cultura do design exige aos seus observadores verem além dos atributos visuais e materiais associadas à criação e</p>
+</div>
+<div style="margin: 42px 20px 0px 0px; width: 240px; float: left;">
+<p style="text-indent: 0px;"> divulgação. Cultura é mais do que uma pura representação visual e transmissão de mensagem. Ao invés, a cultura formula, formata, circula, contém e recupera informações, sendo que adquire diversas formas através do tempo e do espaço, constituindo o património comum da humanidade, devendo ser reconhecida e consolidada em beneficio das gerações presentes e futuras.</p>
+
+</div>
+  </div>
             
            
            
@@ -217,21 +234,21 @@
 
 <p>Cultura é a construção e interpre-tação humana de símbolos e significados que são partilhados, na qual se identifica uma determinada comunidade, diferen-ciando-se de outras através da sua iden-tidade cultural.</p>
 <p> (...) una construcción específicamen-te humana que se expresa a través de todos esos universos simbólicos y de sentido socialmente compartidos, que le ha permitido a una sociedad llegar a “ser” todo lo que se ha construido como pueblo y sobre el que se construye un referente discursivo de pertenencia y de diferencia: la identidade.
-<p>No sentido lato, identidade é o <i>“conjunto de características (físicas e psicológicas) essenciais e distintivas de alguém, de um grupo social ou de alguma coisa”</i>. </p>
-<p>Neste contexto, a identidade de uma pessoa é o conjunto de atributos <p>
+<p>No sentido lato, identidade é o <i>“conjunto de características (físicas e psico-lógicas) essenciais e distintivas de alguém, de um grupo social ou de alguma coisa”</i>. </p>
+<p>Neste contexto, a identidade de uma pessoa é o conjunto de atributos que a torna especial e única. Diferentes<p>
 </div>
 
 <div style="padding: 94px 10px 0px 10px; margin-top: -20px; width: 230px; float: left;">
-<l>que a torna especial e única. Diferentes pessoas podem ter algumas característi-cas em comum, no entanto, o que as diferencia é justamente a forma como essas características se articulam na sua formação individual. Seguindo o mesmo raciocínio, poder-se-á afirmar que a identidade de um local é o resumo das suas características intrínsecas, onde, por sua vez, a sua identidade cultural é identificada pelos valores, signos, representações ou expressões humanas que o distinguem e identificam. </l>
+<l>pessoas podem ter algumas característi-cas em comum, no entanto, o que as diferencia é justamente a forma como essas características se articulam na sua formação individual. Seguindo o mesmo raciocínio, poder-se-á afirmar que a identidade de um local é o resumo das suas características intrínsecas, onde, por sua vez, a sua identidade cultural é identificada pelos valores, signos, representações ou expressões humanas que o distinguem e identificam. </l>
 <p style="margin-top: 0px;">Tanto a cultura, como a identidade cultural de um local resultam do cruzamento da sua herança com a sua história e evolução ao longo do tempo.</p> 
-<p>La cultura no es algo dado, uma herencia biológica, sino uma construcción social e históricamente situada, em consecuencia es um producto histórico concreto, uma
+<p>La cultura no es algo dado, uma herencia biológica, sino uma construcción social e históricamente situada, em consecuencia es um producto histórico concreto, uma construcción que se inserta em la 
 </div>
 
 <div style="padding: 94px 10px 0px 10px; margin-top: -20px; width: 230px; float: left;">
- <l> construcción que se inserta em la história y especificamente em la história de las inter-acciones que los diversos grupos sociales establecen entre si. </l>
-<p style="margin-top: 0px;">Neste contexto, interpreta-se Cultura no sentido antropológico, como <i>“conjunto da cultura material e imaterial que identifica uma determinada comunidade.”</i> Segundo a definição anterior, podemos então diferenciar duas formas distintas de cultura:  material e imaterial.</p>
+ <l> história y especificamente em la história de las inter-acciones que los diversos grupos sociales establecen entre si. </l>
+<p style="margin-top: 0px;">Neste contexto, interpreta-se Cultura no sentido antropológico, como <i>“conjunto da cultura material e imaterial que identifica uma determinada comuni-dade.”</i> Segundo a definição anterior, podemos então diferenciar duas formas distintas de cultura:  material e imaterial.</p>
 <p>A significant amount of the movable and immovable cultural capital of any country is held in public or quasi-public institutions such as museums, galleries, archives, monasteries, shrines, historic buildings, heritage sites, etc. In addition, these institutions are also often reposi-tories 
-of intangible cultural capital, as in the case of heritage locations, for example, which are inextricably bound</p>
+of intangible cultural capital, as in the case of heritage locations, for example, which are inextricably bound up with their history and with the rituals and customs with which they are</p>
     
 </div>
 </div>
@@ -247,38 +264,38 @@ of intangible cultural capital, as in the case of heritage locations, for exampl
              
              
 <div class="mat-capa" style="background: right #fff;">
-<div style="padding: 80px 10px 0px 60px; margin-top: -20px; width: 230px; float: left; letter-spacing: .1px;">
+<div style="padding: 95px 10px 0px 60px; margin-top: -20px; width: 230px; float: left; letter-spacing: .1px;">
 
-<p style="text-indent: 0px;">up with their history and with the rituals and customs with which they are associated. These institutions contribute cultural output primarily in the form of services, consumed by both local people and visitors. </p>
+<p style="text-indent: 0px;"> associated. These institutions contribu-te cultural output primarily in the form of services, consumed by both local people and visitors. </p>
 <p>Cultura material é todo o produto que resulta da produção humana, é o conjunto de artefactos que combinam a matéria prima e tecnologia, diferencian-do-se das estruturas fixas pela sua mobilidade. 
 Já a cultura imaterial diz respeito ao conhecimento que não foi transmitido por meio de livros ou qualquer outro tipo de registo
 ou formas, mas sim pelo conhecimento que é transmitido na prática através das gerações. Pelo exposto, a tradição e o conhecimento são por isso factores 
-imprescindíveis para a continuidade da cultura intangível e para a construção da identidade de uma comunidade ou </p>
+imprescindíveis para a continuidade da cultura intangível e para a construção da identidade de uma comunidade ou povo. O designer é um agente ativo na </p>
 
 </div>
 
-<div style="padding: 80px 10px 0px 10px; margin-top: -20px; width: 230px; float: left; letter-spacing: .1px;">
+<div style="padding: 95px 10px 0px 10px; margin-top: -20px; width: 230px; float: left; letter-spacing: .1px;">
 
-<p style="text-indent: 0px;">povo. O designer é um agente ativo na construção cultural, pois as escolhas que faz e as mensagens que transmite são um elemento constitutivo de uma realidade cultural material pública.</p>
-<p>The designer’s role is in the creation of value. This most obviously is commercial value, but may also include social, cultural, environmental, political and symbolic values. </p>
+<p style="text-indent: 0px;">construção cultural, pois as escolhas que faz e as mensagens que transmite são um elemento constitutivo de uma realidade cultural material pública.</p>
+<p style="letter-spacing: -.1px;">The designer’s role is in the creation of value. This most obviously is commer-cial value, but may also include social, cultural, environmental, political and symbolic values. </p>
 <p>O seu papel é decisivo na comunica-ção, nas relações simbólicas, bem como no relacionamento dos indivíduos com a sociedade. Deste modo, o designer cumpre a sua função, como escreveu Victor Margolin. </p>
-<p>O designer deve procurar investigar novas concepções e tentar perceber o modo como o design afecta a acção humana. (...) O design enquanto cultura
-relaciona-se com as disciplinas que estudam o comportamento humano</p>
+<p style="letter-spacing: -.1px;">O designer deve procurar investigar novas concepções e tentar perceber o modo como o design afecta a acção humana. (...) O design enquanto cultura
+relaciona-se com as disciplinas que estudam o comportamento humano </p>
 </div>
 
 
-<div style="padding: 80px 10px 0px 10px; margin-top: -20px; width: 230px; float: left; letter-spacing: .1px;">
+<div style="padding: 95px 10px 0px 10px; margin-top: -20px; width: 230px; float: left; letter-spacing: .1px;">
 
 <p style="text-indent: 0px;">(como a sociologia e antropologia) ao mesmo tempo que se relaciona com as que estudam objectos (tais como história da arte ou da cultura material. </p>
   <p>Segundo Stuart Hall, atualmente, as culturas nacionais são uma união das principais fontes de identidade cultural. A Cultura Nacional é composta, não apenas de instituições culturais,
   mas também de símbolos e representações que produzem a sensação de pertença perante o local, sentimentos com os quais nos identificamos, construindo, desta forma, identidades. Nestes sentimentos,
   estão contidas as histórias que são contadas sobre o local, memó-rias que relacionam o presente com o passado, a partir das quais são construí-das imagens (HALL, 1996).  Na aborda-gem desta problemática,
-  o autor defen-de que uma das consequências da globalização é o fortalecimento ou a </p>
+  o autor defen-de que uma das consequências da </p>
 </div>
 
 
-<div style="padding: 80px 10px 0px 10px; margin-top: -20px; width: 230px; float: left; letter-spacing: .1px;">
-<p style="text-indent: 0px;">criação de novas identidades nacionais e locais, i.e., a globalização, produz uma nova interação entre o global e o local. (HALL, 1998:77).</p>
+<div style="padding: 95px 10px 0px 10px; margin-top: -20px; width: 230px; float: left; letter-spacing: .1px;">
+<p style="text-indent: 0px;">globalização é o fortalecimento ou a criação de novas identidades nacionais e locais, i.e., a globalização, produz uma nova interação entre o global e o local. (HALL, 1998:77).</p>
 <p>A diversidade local tem um papel importante neste processo da globalização pois divulga a sua cultura local a um nível global, transmitindo a terceiros as suas especificidades únicas e distintivas, levando a um reconhecimento colectivo das mesmas. Desta forma, a preservação do <i>sítio</i>, da sua cultura material e não material, leva á sua identificação, ao mesmo tempo que contribui para a formação do sentimento de pertença local. O designer deverá ter a capacidades de transmitir o sentimento de pertença da comunidade e destacar essa mais valia, comunicando-a para o exterior.</p>  
 </div>
 </div>
@@ -294,14 +311,14 @@ relaciona-se com as disciplinas que estudam o comportamento humano</p>
 <div class="mat-capa" style="background: top right #fff url(http://i.imgur.com/40ZXdLD.png) no-repeat;">
 <div style="padding: 70px 50px; float: left; font: italic 700 26px playfair display; width: 160px; text-align: right; line-height: 100%;">2. A relação entre a história do local e a sua identidade sócio-urbana<br><br>
 <subt style="letter-spacing: 0px; font-size: 10px;"><i>Fig. 1 – Esquema representativo da teoria de Marc Augé sobre o Espaço Antropológico, <br><br>fonte: autora.</i></subt></div> 
-<div style="padding: 300px 10px 0px 10px; margin-top: -20px; width: 240px; float: left;">
+<div style="padding: 300px 10px 0px 10px; margin-top: -30px; width: 240px; float: left;">
 <p>Augé define o <i>sítio</i> - enquanto espaço antropológico - como um espaço identitá-rio, relacional e histórico, que cria e fomenta relações interpessoais,  <span style="letter-spacing: -.2px">movendo-se num tempo e espaço muito bem definido, (...) é simultaneamente princípio de sentido para aqueles que o habitam e princípio de</span> inteligibilidade para quem o observa.</p>
   <p>Pelo exposto, os espaços antropoló-gicos são espaços onde ocorre a materia-</p>
   
 </div>
 
 
-<div style="padding: 300px 10px 0px 10px; margin-top: -20px; width: 240px; float: left; letter-spacing: -.2px">
+<div style="padding: 300px 10px 0px 10px; margin-top: -30px; width: 240px; float: left; letter-spacing: -.2px">
 <p style="text-indent: 0px;"> lização da identidade social e possuem em comum três características: são identitá-rios,
   relacionais e históricos. Identitários, uma vez que, no mesmo lugar, podem co-existir elementos dis-tintos; relacionais, na medida em que, partilhar um lugar comum, significa que elementos singulares se 
   rela-cionem, por forma a construir uma identi-dade partilhada; e, por fim, históricos, no sentido em que estes lugares detêm uma
@@ -309,7 +326,7 @@ relaciona-se com as disciplinas que estudam o comportamento humano</p>
 </div>
 
 
-<div style="padding: 253px 10px 0px 10px; margin-top: -20px; width: 240px; float: left;"><subt style="padding-left: 120px;letter-spacing: 0px; font-size: 10px;">(FIGURA 1)</subt><br><br><br>
+<div style="padding: 253px 10px 0px 10px; margin-top: -30px; width: 240px; float: left;"><subt style="padding-left: 120px;letter-spacing: 0px; font-size: 10px;">(FIGURA 1)</subt><br><br><br>
 <p style="text-indent: 0px;"> estabilidade num determinado tempo.</p>
 <p>Pelo exposto, a simbolização do espaço é originada através das vivências e das relações humanas. Designa-se de lugar antropológico, uma vez que neste espaço que se desenvolvem relações identitárias de uma comunidade, bem como a sua história comum, desenvolvendo, deste modo, determinados códigos, signos e símbolos próprios.</p>
 </div>
@@ -325,36 +342,38 @@ relaciona-se com as disciplinas que estudam o comportamento humano</p>
             
             
 <div class="mat-capa" style="background: right #fff;">
-<div style="padding: 80px 10px 0px 60px; margin-top: -20px; width: 230px; float: left;">
+<div style="padding: 120px 10px 0px 60px; margin-top: -20px; width: 230px; float: left;">
 <p>O autor vai mais longe e faz a distinção entre lugar objectivo e lugar simbólico: o primeiro caracteriza-se pela inscrição de marcas objectivas da identi-dade e da história do <i>sítio</i>
 (por exemplo, igrejas, lugares públicos, escolas, entre outros), o segundo caracteriza-se pela forma como os espaços são definidos e pelo relacionamento que outros criam com o espaço em si (por exemplo, residência e linguagem).</p>
 <p>Segundo Augé, a diversidade, em princípio, é uma coisa boa, mas não sistematicamente. É preciso pensar na cultura, na diversidade e na identidade sempre em movimento, nunca estanque.
-A identidade local é, por isso, uma representação construída a partir da tentativa de unificação de inúmeras identidades nela presentes. Segundo</p>
+A identidade local é, por isso, uma representação construída a partir da tentativa de unificação de inúmeras </p>
 </div>
 
 
-<div style="padding: 80px 10px 0px 10px; margin-top: -20px; width: 230px; float: left;">
+<div style="padding: 120px 10px 0px 10px; margin-top: -20px; width: 230px; float: left;">
 <p style="text-indent: 0px;">Kevin Lynch, os bairros são regiões de uma cidade onde o observador entra mentalmente e reconhece característi-cas comuns que o representam. Estas características são identificáveis internamente (para a comunidade) e o designer deve utilizar estes elementos na representação visual do local, pois são as referências que permitem o reconhecimento externo.</p>
 <p>Identify and build an identity based on cultural resources and distinctive place so the image is recognized and that matches with expectations.</p>
-<p>A problemática deste tipo de representação visual é que necessita de ser compreendida de igual modo por todos os receptores. No entanto, a mesma realidade pode ser descrita ou interpretada de diferentes formas.</p>
+<p>A problemática deste tipo de representação visual é que necessita de ser compreendida de igual modo por todos os receptores. No entanto, a mesma realidade pode ser descrita ou </p>
 
 </div>
 
 
-<div style="padding: 80px 10px 0px 10px; margin-top: -20px; width: 230px; float: left;">
-<p style="text-indent: 0px;">Deste modo, é de extrema importância que o designer consiga encontrar um consenso, por forma a que a mensagem seja igualmente compreendida pelo maior número de pessoas. Contudo, tal tarefa não é fácil, uma vez que a
+<div style="padding: 120px 10px 0px 10px; margin-top: -20px; width: 230px; float: left;">
+<p style="text-indent: 0px;">interpretada de diferentes formas. Deste modo, é de extrema importância que o designer consiga encontrar um consenso, por forma a que a mensagem seja igualmente compreendida pelo maior número de pessoas. Contudo, tal tarefa não é fácil, uma vez que a
 cidade é um espaço que está em permanente mutação a nível urbano, sociológico ou morfológico: é um elemento vivo.</p>
-<p>Segundo o autor Franco Bianchini, A city is a complex and multi-faceted entity (…): a) an area defined by clear geographical boundaries, and endowed with certain natural characteristics; b)
-an environment shaped by human intervention (…) c) a community of people, with particular social networks and dynamics (a society); d) a system of economic activities and relationships; e) a
-natural environment, a society and an </p>
+<p style="letter-spacing: -.2px;">Segundo o autor Franco Bianchini, A city is a complex and multi-faceted entity (…): a) an area defined by clear geographi-cal boundaries, and endowed with certain natural characteristics; b)
+an environment shaped by human intervention (…) c) a community of people, with particular social networks and dynamics (a society); d) a system of economic activities and </p>
 
 </div>
 
 
-<div style="padding: 80px 10px 0px 10px; margin-top: -20px; width: 230px; float: left;">
-<p style="text-indent: 0px;">economy governed by an agreed set of principles and regulations resulting from the interaction between different political actors.</p>
+<div style="padding: 120px 10px 0px 10px; margin-top: -20px; width: 230px; float: left;">
+<p style="text-indent: 0px;">relationships; e) a
+natural environment, a society and an economy governed by an agreed set of principles and regulations resulting from the interaction between different political actors.</p>
 
-<p>As cidades despertam comporta-mentos nos seus habitantes, pois estimulam, encorajam, incentivam e inspiram. Poderá dizer-se que o carácter da cidade é definido pela associação das suas diversas características: planeamento urbano, cultural e religioso, agregado à individualidade dos seus habitantes. Sempre que nos movemos pela cidade, deparamo-nos com um número indeterminado de estímulos que desperta em nós emoções, reflexões, sensações que refletem o carácter afectivo e intelectual do espaço.</p>
+<p>As cidades despertam comporta-mentos nos seus habitantes, pois estimulam, encorajam, incentivam e inspiram. Poderá dizer-se que o carácter da cidade é definido pela 
+associação das suas diversas características: planea-mento urbano, cultural e religioso, agregado à individualidade dos seus habitantes. Sempre que nos movemos pela cidade,
+deparamo-nos com um número indeterminado de estímulos que desperta em nós emoções, reflexões, sensações que refletem o carácter afectivo e intelectual do espaço.</p>
 
 </div>
 </div>
@@ -423,7 +442,73 @@ estas variáveis a um sítio, elas estão em constante mutação, elevando a com
            
            
            </li>
+           <li>
            
+           
+           
+<div class="mat-capa" style="background: right #fff;">
+<div style="padding: 0px 10px 0px 60px; margin-top: -20px; width: 230px; float: left; letter-spacing: .1px;">
+<p>Mediante as questões levantadas antropologicamente, a interpretação perante a identidade do espaço e do lugar, bem como do sentimento de pertença, dependem da perceção de cada um de nós. É nosso dever, enqua-nto cidadãos, conhecermos os nossos bens culturais.
+Estes retratam a história e a tradição e, concomitantemente, fortalecem o sentimento de pertença. Este sentimento é desenvolvido pelas experiências percetuais, pois elas originam sensações e emoções que marcam, isto porque o ser humano só valoriza, protege e
+preserva o que conhece. Como referido anteriormente, é muito importante, não só que a criação de uma identidade visual associado a uma sítio seja coesa, mas também que seja criada por forma a ser entendida e descodificada. Para tal aconteça, é necessário utilizar
+a linguagem dos interlocutores, pois só deste modo é que existe a comunicação.</p>
+<p>Margarida fragoso aborda a importância da imagens institucional</p>
+</div>
+
+<div style="padding: 0px 10px 0px 10px; margin-top: -20px; width: 230px; float: left; letter-spacing: .1px;">
+<p style="text-indent: 0px;">das cidades e afirma que as Instituições Municipais, ao utilizarem “<i>emblemas visuais</i>” como representação visual, estão a ser “<i>veículos de transmissão de identidade</i>”, 
+sendo por isso “<i>uma referência importante na formação da imagem</i>” do próprio local. Esta imagem institucional deve ser aplicada nos diversos suportes de forma linear e coerente, “<i>é fundamental que as
+cidades procurem uniformizar e dar eficiência visual aos seus símbolos</i>”, pois, deste modo, estamos a credibilizar a marca e o que ela representa. A autora refere ainda que “<i>as imagens municipais são também
+suportes comunicacionais educativos</i>”: concentram na sua expressão visual “<i>conhecimento da história, da geografia, do património, das atividades económicas das cidades</i>" e são, ao mesmo tempo, uma alavanca
+para o desenvolvimento do jovem, da responsabilidade social, da educação cívica (...) respondendo à nova concepção de educação que apela para a formação global do individuo. </p>
+</div>
+
+
+<div style="padding: 0px 10px 0px 10px; margin-top: -20px; width: 230px; float: left; letter-spacing: .1px;">
+ <p>As representações visuais e gráficas das cidades/localidades devem ter um carácter de permanência, ou seja, devem ser constantes durante um longo período de tempo, mesmo que o objecto de representação se modifique,
+ ou corre-se o risco de se perder a identidade pretendida. Quando tal não acontece, origina-se um sentido de desapropriação e de confusão por parte dos seus habitantes, pois a sua unifor-mização confere aos seus habitantes
+ a sensação de segurança, ao mesmo tempo que perpetua a sua identidade, cultura e memória. A criação ou altera-ção de uma representação visual associada a um local deve ser estável, contínua e não ser alterada em função do
+ órgão de gestão. Esta é a represen-tação visual do local e serve com forma de identificação dos seus habitan-tes/usuários, a sua função é a afirmação e reconhecimento do local.</p>
+ <p>Cada vez mais, as cidades têm a preocupação de ser representadas visualmente com o objetivo do</p>
+</div>
+
+
+<div style="padding: 0px 10px 0px 10px; margin-top: -20px; width: 230px; float: left; letter-spacing: .1px;">
+  <p style="text-indent: 0px;">crescimento económico e para serem alvos de investimentos. Para tal, comunicam visualmente através de textos, símbolos e imagens que transmitem as suas características diferenciadoras. A identidade local é por isso uma representação construída a partir da tentativa de unificação de inúmeras identidades nela presentes.</p>
+<p>Ora, já aqui foi referenciado por diversos autores que  a criação de um projecto de identidade visual implica um conhecimento cognitivo e histórico do que se pretende comunicar e a conciliação destes com o conceito de design. Neste contexto, o designer não pode esquecer qual a sua principal função: criar uma informação visual que se relacione com o “objecto” a comunicar. Como refere Bruno Munari, um designer é um projectista dotado de sentido estético, (...) ocupa-se das imagens, cuja função é transmitir uma comunicação e uma informação visual: signos, sinais, símbolos, significado das formas e das cores, relações entre eles. </p>
+  
+</div>
+</div>
+           
+           
+           </li>
+           <li>
+           
+           
+           
+           
+           
+<div class="mat-capa" style="background: right #fff;">
+<div style="padding: 70px; float: left; font: italic 700 26px playfair display; width: 160px; text-align: right; line-height: 100%;">Conclusão</div>  
+<div style="padding: 70px 10px 0px 10px; margin-top: -20px; width: 320px; float: left;">
+<p>A arquitetura, arte, história, paisagem, o clima, a cultura do local são os aspetos que definem a sua história. A representação visual da identidade local tenta ser a expressão
+máxima deste imaginário e o primeiro elemento de comunicação. Esta diferenciação é um bem cultural, uma vez que promove o sítio, tornando-o mais atraente para o desenvolvimento de 
+novas atividades económicas, aumentando a auto - estima dos habitantes, uma vez que leva ao reconheci-mento da sua identidade. A preservação do local, da sua cultura material e não material,
+leva à sua identificação e, ao mesmo tempo, contribui para a formação do sentimento de pertença local. Cada cidade ou local deve comunicar e projetar as suas mais valias através de uma identidade
+visual forte, de fácil compreensão, por forma a criar uma relação emocional com a comunidade. Essa representação visual deve conter as características mais representativas do local, articuladas
+com um grafismo contemporâneo e apelativo, ao mesmo tempo que resume a sua história, proporcionando uma nova percepção ao cidadão, turista e/ou investidor.</p>
+</div>
+
+
+<div style="padding: 70px 10px 0px 10px; margin-top: -20px; width: 310px; float: left;">
+<p>A construção visual desta identidade é decisiva no reconhecimento da personalidade do local, pois só deste modo poderá ser projetada e compreendida a um nível global. O objetivo do designer é criar uma representação visual com a capacidade de chamar a atenção e criar memória. Pelo exposto, deve-se criar uma identidade visual assente no património cultural, representando, além disso, a contemporaneidade nela existente. Esta representação deve ser feita sem a perda da identidade local e associando-se à globalização.</p>
+<p>O designer deve contribuir para essa diversidade ser percebida pelo máximo de pessoas, uma vez que está a preservá-la a um nível intangível. Para atingir esse objectivo, o designer deve aferir as características diferenciadoras, por forma a conseguir uma representação visual identitária do sítio, que desenvolva uma relação emocional com o receptor, i.e. o designer deve criar uma imagem visual com base nos atributos diferenciadores do local, por forma a reforçar a identidade do mesmo.</p>
+</div>
+</div>
+           
+           
+           
+           </li>
            
            
            
